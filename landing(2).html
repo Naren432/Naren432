@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CCROA — a simple, focused digital resource designed to help you move from intention to action.">
+<title>CCROA — Your Next Step Starts Here</title>
+<style>
+:root{
+  --bg:#0a0b10;--card:#11131b;--text:#f7f7fb;--muted:#a7adbd;
+  --accent:#b58cff;--accent2:#6ee7ff;--border:rgba(255,255,255,.10);
+  --shadow:0 25px 80px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(181,140,255,.18),transparent 30%),
+    radial-gradient(circle at 85% 20%,rgba(110,231,255,.12),transparent 28%),
+    var(--bg);
+  color:var(--text);line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+.logo{font-size:22px;font-weight:900;letter-spacing:.08em}
+.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 22px;border-radius:12px;font-weight:800;
+  background:linear-gradient(135deg,var(--accent),#8d6bff);
+  color:#09090d;box-shadow:0 12px 35px rgba(181,140,255,.25);
+  transition:.2s transform,.2s box-shadow;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 45px rgba(181,140,255,.35)}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--border);box-shadow:none}
+.hero{padding:85px 0 90px;text-align:center}
+.badge{
+  display:inline-block;padding:7px 12px;border:1px solid var(--border);
+  border-radius:999px;color:#d9d0ff;background:rgba(181,140,255,.08);
+  font-size:13px;font-weight:700;margin-bottom:22px;
+}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-.045em;max-width:900px;margin:auto}
+.gradient{background:linear-gradient(90deg,#fff,var(--accent2),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:690px;margin:24px auto 30px;color:var(--muted);font-size:18px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.note{margin-top:14px;color:#777d8c;font-size:12px}
+.preview{
+  margin:50px auto 0;max-width:920px;border:1px solid var(--border);
+  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  border-radius:24px;padding:14px;box-shadow:var(--shadow)
+}
+.preview-inner{
+  min-height:310px;border-radius:16px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#171321,#0d1820);
+}
+.preview-card{text-align:center;padding:30px}
+.preview-card .mini{font-size:12px;letter-spacing:.16em;color:var(--accent2);font-weight:800}
+.preview-card h2{font-size:42px;margin:10px 0}
+section{padding:90px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 45px}
+.section-head h2{font-size:clamp(30px,4vw,48px);line-height:1.1}
+.section-head p{color:var(--muted);margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  padding:28px;border:1px solid var(--border);border-radius:18px;
+  background:rgba(255,255,255,.035)
+}
+.icon{font-size:27px;margin-bottom:18px}
+.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{padding:25px;border-left:2px solid var(--accent);background:rgba(255,255,255,.03);border-radius:0 16px 16px 0}
+.num{font-size:13px;color:var(--accent2);font-weight:900;letter-spacing:.1em}
+.step h3{margin:8px 0}.step p{color:var(--muted)}
+.cta{
+  text-align:center;padding:70px 25px;border:1px solid var(--border);border-radius:26px;
+  background:radial-gradient(circle at center,rgba(181,140,255,.13),rgba(255,255,255,.025) 55%)
+}
+.cta h2{font-size:clamp(32px,5vw,54px);line-height:1.08}
+.cta p{color:var(--muted);max-width:620px;margin:15px auto 25px}
+footer{padding:35px 0 50px;color:#747a88;font-size:13px;text-align:center}
+@media(max-width:760px){
+ .navlinks{display:none}.hero{padding-top:55px}
+ .grid,.steps{grid-template-columns:1fr}
+ .preview-inner{min-height:230px}.preview-card h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header class="container">
+  <nav>
+    <a class="logo" href="#">CCROA</a>
+    <div class="navlinks">
+      <a href="#benefits">Benefits</a>
+      <a href="#how">How It Works</a>
+      <a href="#get-started">Get Started</a>
+    </div>
+    <a class="btn" href="#get-started">Get Access</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="badge">DIGITAL RESOURCE • CCROA</div>
+    <h1>Turn your intention into your <span class="gradient">next move.</span></h1>
+    <p>A clean, practical resource to help you get focused, take action, and build momentum — one step at a time.</p>
+    <div class="actions">
+      <!-- Replace https://rupendra20.gumroad.com/l/ccroa with your actual Gumroad product URL -->
+      <a class="btn" href="https://rupendra20.gumroad.com/l/ccroa" target="_blank" rel="noopener">Get CCROA →</a>
+      <a class="btn secondary" href="#benefits">Learn More</a>
+    </div>
+    <div class="note">Secure checkout • Instant digital access after purchase</div>
+
+    <div class="preview">
+      <div class="preview-inner">
+        <div class="preview-card">
+          <div class="mini">YOUR NEXT LEVEL STARTS WITH</div>
+          <h2>ONE DECISION.</h2>
+          <p style="color:#a7adbd">Focus. Action. Momentum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="container">
+    <div class="section-head">
+      <h2>Simple enough to start. Focused enough to finish.</h2>
+      <p>Designed to remove unnecessary complexity and keep your attention on meaningful progress.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">⚡</div><h3>Take action</h3><p>Move from thinking about your goals to taking a clear next step.</p></div>
+      <div class="card"><div class="icon">🎯</div><h3>Stay focused</h3><p>Use a straightforward structure that keeps your priorities visible.</p></div>
+      <div class="card"><div class="icon">🚀</div><h3>Build momentum</h3><p>Turn small consistent actions into a repeatable process for progress.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="section-head">
+      <h2>How it works</h2>
+      <p>No complicated setup. Start with where you are and move forward.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Get access</h3><p>Complete your purchase through the secure checkout.</p></div>
+      <div class="step"><div class="num">02</div><h3>Open the resource</h3><p>Access the digital product and review the framework at your own pace.</p></div>
+      <div class="step"><div class="num">03</div><h3>Put it into action</h3><p>Choose your next step and start building momentum.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="get-started">
+  <div class="container">
+    <div class="cta">
+      <h2>Ready to make your next move?</h2>
+      <p>Start with CCROA and turn your intention into consistent action.</p>
+      <a class="btn" href="https://rupendra20.gumroad.com/l/ccroa" target="_blank" rel="noopener">Get CCROA Now →</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  © <span id="year"></span> CCROA. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
